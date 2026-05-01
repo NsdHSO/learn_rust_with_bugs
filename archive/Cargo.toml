@@ -1,0 +1,9 @@
+[workspace]
+resolver = "2"
+members = [
+    "01-ownership",
+    "02-borrowing",
+    "03-slices",
+    "04-lifetimes",
+    "05-mixed",
+]
