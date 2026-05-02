@@ -6,15 +6,15 @@ fn main() {
     // ERROR 1: immutable borrow used after mutable borrow
     // HINT: &book (immutable) is held while book.push_str (mutable) runs.
     // Either do all mutation before creating chapter, or clone book first.
-    let chapter = &book;
-    book.push_str(" - Chapter 1");
+    let chapter = &mut book;
+    chapter.push_str(" - Chapter 1");
     println!("reading: {chapter}");
 
     // ERROR 2: ownership lost, then reused
     // HINT: co_author = author moves ownership. print_author(&author) fails.
     // Borrow with &author, or clone: author.clone().
     let author = String::from("Steve Klabnik");
-    let co_author = author;
+    let co_author = &author;
     print_author(&author);
     println!("co-author: {co_author}");
 
@@ -34,18 +34,18 @@ fn print_author(name: &String) {
     println!("author: {name}");
 }
 
-fn first_word(s: &String) -> &str {
+fn first_word(s: &String) -> String {
     let copy = s.clone();
     let bytes = copy.as_bytes();
     for (i, &item) in bytes.iter().enumerate() {
         if item == b' ' {
-            return &copy[..i];
+            return copy[..i].to_string();
         }
     }
-    &copy[..]
+    copy[..].to_string()
 }
 
-fn summarize(text: &str) -> &str {
+fn summarize(text: &str) -> String{
     let headline = format!("Summary: {text}");
-    &headline[..8]
+    headline[..8].to_string()
 }
