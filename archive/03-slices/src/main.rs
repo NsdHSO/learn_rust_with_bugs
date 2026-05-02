@@ -22,11 +22,15 @@ fn main() {
     // let _slice = &a[0..10];
 }
 
-fn longest(x: &str, y: &str) -> &str {
-    if x.len() > y.len() { x } else { y }
+fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
+    if x.len() > y.len() {
+        x
+    } else {
+        y
+    }
 }
 
-fn get_word() -> &str {
+fn get_word() -> String {
     let s = String::from("hello");
-    &s[..]
+    s
 }
