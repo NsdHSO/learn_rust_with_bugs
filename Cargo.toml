@@ -4,3 +4,14 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+
+[workspace]
+resolver = "2"
+members = [
+    ".",
+    "archive/01-ownership",
+    "archive/02-borrowing",
+    "archive/03-slices",
+    "archive/04-lifetimes",
+    "archive/05-mixed",
+]
