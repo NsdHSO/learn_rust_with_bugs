@@ -25,20 +25,24 @@ fn main() {
 }
 
 // Missing lifetime parameter on struct
-struct Excerpt {
-    part: &str,
+struct Excerpt<'a> {
+    part: &'a str,
 }
 
 // Missing lifetime annotation
-fn pick_longer(x: &str, y: &str) -> &str {
-    if x.len() > y.len() { x } else { y }
+fn pick_longer<'a>(x: &'a str, y: &'a str) -> &'a str {
+    if x.len() > y.len() {
+        x
+    } else {
+        y
+    }
 }
 
 struct Holder<'a> {
     value: &'a str,
 }
 
-impl Holder {
+impl<'a> Holder<'a> {
     fn announce(&self, msg: &str) -> &str {
         println!("Announcement: {msg}");
         self.value
