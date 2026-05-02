@@ -3,5 +3,25 @@
 version = 4
 
 [[package]]
+name = "borrowing"
+version = "0.1.0"
+
+[[package]]
+name = "lifetimes"
+version = "0.1.0"
+
+[[package]]
+name = "mixed"
+version = "0.1.0"
+
+[[package]]
+name = "ownership"
+version = "0.1.0"
+
+[[package]]
 name = "rust-ownership-learnin"
+version = "0.1.0"
+
+[[package]]
+name = "slices"
 version = "0.1.0"
