@@ -2,3 +2,5 @@
 /target/
 /archive/target/
 archive/05-broken/
+.idea
+.zed
