@@ -8,6 +8,18 @@ edition = "2024"
 [workspace]
 resolver = "2"
 members = [
+    "archive_2/01-ownership-deep",
+    "archive_2/02-borrowing-deep",
+    "archive_2/03-slices-deep",
+    "archive_2/04-lifetimes-deep",
+    "archive_2/05-structs-lifetimes",
+    "archive_2/06-rc-arc",
+    "archive_2/07-cell-refcell",
+    "archive_2/08-mutex-threading",
+    "archive_2/09-trait-objects",
+    "archive_2/10-generics-deep",
+    "archive_2/11-unsafe-rust",
+    "archive_2/12-interview-practice",
     ".",
     "archive/01-ownership",
     "archive/02-borrowing",
