@@ -1,0 +1,6 @@
+[package]
+name = "12-interview-practice"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
