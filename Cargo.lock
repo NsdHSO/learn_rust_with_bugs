@@ -7,7 +7,27 @@ name = "borrowing"
 version = "0.1.0"
 
 [[package]]
+name = "borrowing-deep"
+version = "0.1.0"
+
+[[package]]
+name = "cell-refcell"
+version = "0.1.0"
+
+[[package]]
+name = "generics-deep"
+version = "0.1.0"
+
+[[package]]
+name = "interview-practice"
+version = "0.1.0"
+
+[[package]]
 name = "lifetimes"
+version = "0.1.0"
+
+[[package]]
+name = "lifetimes-deep"
 version = "0.1.0"
 
 [[package]]
@@ -15,7 +35,19 @@ name = "mixed"
 version = "0.1.0"
 
 [[package]]
+name = "mutex-threading"
+version = "0.1.0"
+
+[[package]]
 name = "ownership"
+version = "0.1.0"
+
+[[package]]
+name = "ownership-deep"
+version = "0.1.0"
+
+[[package]]
+name = "rc-arc"
 version = "0.1.0"
 
 [[package]]
@@ -24,4 +56,20 @@ version = "0.1.0"
 
 [[package]]
 name = "slices"
+version = "0.1.0"
+
+[[package]]
+name = "slices-deep"
+version = "0.1.0"
+
+[[package]]
+name = "structs-lifetimes"
+version = "0.1.0"
+
+[[package]]
+name = "trait-objects"
+version = "0.1.0"
+
+[[package]]
+name = "unsafe-rust"
 version = "0.1.0"
